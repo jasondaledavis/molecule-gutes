@@ -1,0 +1,30 @@
+/*
+Theme Name: Molecule
+Description: Global Styles for older IE versions (previous to IE10).
+*/
+
+.site-header-main:before,
+.site-header-main:after,
+.footer-global:before,
+.footer-global:after {
+	content: "";
+	display: table;
+}
+
+.site-header-main:after,
+.footer-global:after {
+	clear: both;
+}
+
+@media screen and (min-width: 56.875em) {
+	
+	.site-header-menu {
+		float: right;
+	}
+
+	.rtl .site-header-menu,
+	.rtl .site-footer .social-navigation {
+		float: left;
+	}
+
+}
