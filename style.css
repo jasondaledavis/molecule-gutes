@@ -441,7 +441,7 @@ i {
     font-style: italic;
 }
 blockquote {
-    color: #676767;
+    /*color: #676767;*/
     font-size: 19px;
     font-size: 1.1875rem;
     font-style: italic;
@@ -464,11 +464,12 @@ q:after {
     content: "";
 }
 blockquote p {
-    margin-bottom: 1.4736842105em;
+    /*margin-bottom: 1.4736842105em;*/
+    padding-left: 40px;
 }
 blockquote cite,
 blockquote small {
-    color: #1a1a1a;
+    /*color: #1a1a1a;*/
     display: block;
     font-size: 16px;
     font-size: 1rem;
@@ -1676,13 +1677,22 @@ blockquote:after,
 .entry-content a:focus {
     /*color: #222222;*/
 }
-.page-content {
-    /*max-width: 1200px !important;
-    width: 100% !important;*/
+.page-template-default .page-content {
     margin: 0 auto;
     padding: 40px 0 20px;
     word-wrap: break-word;
 }
+
+/*If page builder is used or classic editor*/
+/*
+.page-content {
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 40px 0 20px;
+    word-wrap: break-word;
+}*/
+
+/*center all content class*/
 .centered {
     margin: 0 auto;
     text-align: center;
@@ -2969,7 +2979,7 @@ p>video {
     .entry-content blockquote:not(.alignleft):not(.alignright),
     .entry-summary blockquote,
     .comment-content blockquote {
-        margin-left: 1.473684211em;
+        /*margin-left: 1.473684211em;*/
     }
     .entry-content blockquote blockquote:not(.alignleft):not(.alignright),
     .entry-summary blockquote blockquote,

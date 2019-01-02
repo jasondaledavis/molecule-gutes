@@ -25,11 +25,11 @@ Description: Used to style Gutenberg Blocks.
 	font-style: italic;
 	line-height: 1.6153846154;
 	padding-top: 0.5384615385em;
-	text-align: left;
+	text-align: center;
 }
 
 .rtl [class^="wp-block-"] figcaption {
-	text-align: right;
+	text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -154,7 +154,10 @@ p.has-drop-cap:not(:focus)::first-letter {
 /* Pullquote */
 
 .wp-block-pullquote {
-	border-width: 4px;
+	border-width: 1px;
+    border-top: 1px solid #555d66;
+    border-bottom: 1px solid #555d66;
+    color: #40464d;
 }
 
 .wp-block-pullquote blockquote {
@@ -162,6 +165,11 @@ p.has-drop-cap:not(:focus)::first-letter {
 	margin: 0;
 	padding: 0;
 }
+
+pre.wp-block-verse {
+	padding-left: 40px;
+}
+
 
 .rtl .wp-block-pullquote blockquote {
 	border-right: 0;
